@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #005f73, #94d2bd);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cce3de;
+}
+
+.modalidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.modalidad {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.modalidad::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.modalidad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.modalidad:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modalidad span {
+    position: relative;
+    z-index: 1;
+}
+.modalidades-grid a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #005f73, #94d2bd);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+    font-size: 1rem;
+    color: #cce3de;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #007f91;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #005f73;
+}
+
+.modalidad-content {
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(244, 244, 244, 0.9);
+    color: #005f73;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.modalidad-content h2 {
+    font-size: 1.8rem;
+    color: #0a9396;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    margin-bottom: 20px;
+}
+
+.section-content h3 {
+    font-size: 1.4rem;
+    color: #005f73;
+    margin-bottom: 5px;
+}
+
+.section-content p, .section-content ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.section-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.courses {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los cursos */
+    margin-top: 20px;
+}
+
+.course {
+    background-color: rgba(244, 244, 244, 0.9);
+    padding: 15px;
+    margin: 0 10px; /* Margen lateral */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Permitir que los cursos se expandan uniformemente */
+}
+
+.course h3 {
+    color: #0a9396;
+}
+
+.course-image {
+    width: 80%; /* Cambiar el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.instagram-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.instagram-image {
+    width: 80%; /* Puedes ajustar el tamaño según lo que desees */
+    max-width: 300px; /* Limita el tamaño máximo */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
